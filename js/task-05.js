@@ -6,5 +6,5 @@ function onInput(evt) {
     if (textInput.value.trim() === "") {
         textOutput.textContent = "Anonymous";
     }
-    textOutput.textContent = textInput.value;
+    textOutput.textContent = textInput.value === "" ? "Anonymous" : textInput.value;
 }
